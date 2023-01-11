@@ -4,27 +4,33 @@ import progress_icon from "../../assets/icons/graph-bar 1.svg";
 import messages_icon from "../../assets/icons/chat-3-line (1) 1.svg";
 import settings_icon from "../../assets/icons/cog (1) 1.svg";
 import contact_img from "../../assets/images/Mask Group.svg";
+import hover_home_icon from "../../assets/icons/hover_home.svg";
+
 import "./FullSidebar.css";
 
 export default function FullSidebar() {
   const routes = [
     {
       icon: home_icon,
+      hoverIcon: hover_home_icon,
       route: "Home",
       path: "/",
     },
     {
       icon: progress_icon,
+      hoverIcon: progress_icon,
       route: "Progress",
       path: "/progress",
     },
     {
       icon: messages_icon,
+      hoverIcon: messages_icon,
       route: "Messages",
       path: "/messages",
     },
     {
       icon: settings_icon,
+      hoverIcon: settings_icon,
       route: "Settings",
       path: "/settings",
     },
@@ -51,7 +57,12 @@ export default function FullSidebar() {
                   : "text-white"
               }`}
             >
-              <img src={item.icon} alt={item.route} />
+              <img
+                src={
+                  location.pathname === item.path ? item.hoverIcon : item.icon
+                }
+                alt={item.route}
+              />
               <p className="ml-4">{item.route}</p>
             </Link>
           </li>
