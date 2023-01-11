@@ -1,0 +1,7 @@
+.full-sidebar {
+  height: calc(100vh - 48px);
+}
+
+.rec {
+  border-radius: -10px;
+}
