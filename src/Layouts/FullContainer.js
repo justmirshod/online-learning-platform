@@ -1,3 +1,3 @@
 export default function FullContainer({ children }) {
-  return <div className="w-[920px] max-auto">{children}</div>;
+  return <div className="w-[920px] mx-auto">{children}</div>;
 }

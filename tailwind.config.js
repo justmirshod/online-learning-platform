@@ -10,6 +10,8 @@ module.exports = {
         dark: "#181B1A",
         "purple-light": "#6553B2",
         gray: "#9D92CB",
+        "gray-light": "#F6F6F5",
+        "purple-blur": "rgba(60, 17, 134, 0.3)",
       },
     },
   },
