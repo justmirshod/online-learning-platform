@@ -4,7 +4,7 @@ import Courselist from "./components/CourseList";
 import "./Home.css";
 export default function Home() {
   return (
-    <div className="home bg-white w-4/5 ml-auto rounded-[48px]">
+    <div className="h-layout bg-white w-4/5 ml-auto rounded-[48px]">
       <FullContainer>
         <div className="mt-[30px]">
           <SearchPanel />

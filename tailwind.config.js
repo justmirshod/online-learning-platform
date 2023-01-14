@@ -13,6 +13,9 @@ module.exports = {
         "gray-light": "#F6F6F5",
         "purple-blur": "rgba(60, 17, 134, 0.3)",
       },
+      width: {
+        "1/10": "10%",
+      },
     },
   },
   plugins: [],
